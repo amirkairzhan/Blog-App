@@ -1,6 +1,6 @@
 const posts = [];
-const TITLE_VALIDATION_LIMIT = 10;
-const TEXT_VALIDATION_LIMIT = 20;
+const TITLE_VALIDATION_LIMIT = 100;
+const TEXT_VALIDATION_LIMIT = 200;
 
 const titleInputNode = document.getElementById('titleInput');
 const textInputNode = document.getElementById('textInput');
