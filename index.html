@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+
+    <link rel="icon" href="https://www.freeiconspng.com/thumbs/blogger-logo-icon-png/blogger-logo-icon-png-10.png" type="image/png">
+
+    <link rel="stylesheet"
+    href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="styles.css">
+</head>
+<body>
+    <div class="blog__app">
+        <div class="column-create">
+            <h2 class="post__head">Новый пост</h2>
+            <input
+                id="titleInput"
+                class="input__title"
+                type="text"
+                placeholder="Заголовок">
+
+            <textarea
+                id="textInput"
+                class="input__text"
+                type="text"
+                placeholder="Напиши пост"
+                ></textarea>
+
+            <button id="postButton" class="post__btn">Опубликовать</button>
+
+            <div id="validationMessage" class="validationMessage validationMessage_hidden">
+                Длина заголовка не должна превышать 100 символов!
+            </div>
+        </div>
+
+        <div class="column-posts">
+            <h2 class="post__head">Лента</h2>
+
+            <div id="js-posts" class="posts">
+                Лента пуста...
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

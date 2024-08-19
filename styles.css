@@ -1,0 +1,198 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #8b00ff;
+}
+
+.blog__app {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1180px;
+    display: flex;
+    gap: 100px;
+}
+
+.column-create {
+    padding: 20px;
+    width: 540px;
+    height: max-content;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.post__head {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #8b00ff;
+}
+
+/*Поле ввода*/
+.input__title,
+.input__text {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    display: block;
+    width: 100%;
+    border: 2px solid #8b00ff;
+    font-size: 32px;
+    color: #8b00ff;
+    background: none;
+    box-sizing: border-box;
+}
+.input__title {
+    height: 60px;
+}
+.input__text {
+    height: 250px;
+}
+
+.post__btn {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-family: inherit;
+    font-size: 32px;
+    color: #fff;
+    background: #8b00ff;
+    border: none;
+    cursor: pointer;
+}
+
+.post__btn:hover {
+    color: #fff;
+    background: #ffa500;
+}
+
+.validationMessage {
+    margin-top: 20px;
+    color: red;
+}
+
+.validationMessage_hidden {
+    display: none;
+}
+
+
+/*Список постов*/
+.column-posts {
+    padding: 20px;
+    width: 540px;
+    height: max-content;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post__time {
+    margin-bottom: 10px;
+    width: 100%;
+    color: #ffa500;
+}
+
+.post__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #8b00ff;
+}
+
+.post__text {
+    font-size: 25px;
+    line-height: 30px;
+    color: #8b00ff;
+}
+
+
+
+@media (max-width: 1199px) {
+    .blog__app {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 30px;
+        width: 700px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .column-create {
+        width: 700px;
+    }
+
+    .column-posts {
+        width: 700px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .blog__app {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 15px;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .column-create {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .post__head {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .input__title,
+    .input__text {
+        margin-bottom: 20px;
+        padding-left: 15px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .input__title {
+        height: 40px;
+    }
+    .input__text {
+        height: 150px;
+    }
+
+    .post__btn {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .column-posts {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .post {
+        margin-bottom: 30px;
+    }
+    
+    .post__title {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .post__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
